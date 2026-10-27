@@ -343,7 +343,7 @@ export function usePlayEngine() {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('enable_blockad_v2') === 'true';
     }
-    return false;
+    return true; // 默认开启去广告 false 改为 true
   });
   const blockAdEnabledRef = useRef(blockAdEnabled);
   useEffect(() => {
