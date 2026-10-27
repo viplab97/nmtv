@@ -2581,7 +2581,7 @@ export function usePlayEngine() {
         fullscreen: true,
         fullscreenWeb: true,
         subtitleOffset: false,
-        miniProgressBar: true,
+        miniProgressBar: false, // 关闭控制栏隐藏时的底部迷你进度条
         mutex: true,
         playsInline: true,
         autoPlayback: false,
